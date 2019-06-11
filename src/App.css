@@ -1,0 +1,9 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background-image: linear-gradient(to top,#36b5d8,#7b45b7);
+  text-align: center;
+}
