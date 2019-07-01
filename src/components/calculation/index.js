@@ -22,9 +22,6 @@ export default class Calculate extends React.Component{
             const response = await crudBuilder(`history?start_at=${this.state.startData}&end_at=${this.state.endData}&base=${this.state.currencyFrom.toUpperCase()}`).get()
             const arrayValues = [];
             const labels = [];
-            this.setState({
-                arr: response.data.rates["2018-08-22"] 
-            })
             for(let key in response.data.rates){
                 for(let currency in response.data.rates[key]){
                     if(currency ===  this.state.currencyTo.toUpperCase()){
