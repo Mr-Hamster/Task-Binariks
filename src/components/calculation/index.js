@@ -40,7 +40,7 @@ export default class Calculate extends React.Component{
 
     updating = async () =>{
         if(this.state.currencyFrom.length === 3){         
-            const response = await crudBuilder(`history?start_at=${this.state.startData}&end_at=${this.state.endData}&base=${this.state.currencyFrom.toUpperCase()}`).get()  
+            const response = await crudBuilder(`history?start_at=2018-01-01&end_at=2018-09-01&base=${this.state.currencyFrom.toUpperCase()}`).get()  
             this.setState({
                 arr:response.data.rates["2018-08-22"] 
             })
