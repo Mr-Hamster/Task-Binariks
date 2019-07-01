@@ -1,0 +1,42 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+}
+
+.inputs{
+    display: flex;
+    flex-flow: row wrap;
+    width:100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
+img{
+    display: flex;
+    height: 60px;
+    cursor: pointer;
+}
+
+.chart{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+}
+
+.inputDate{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-flow: row wrap;
+    margin: 10px;
+}

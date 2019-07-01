@@ -1,14 +1,19 @@
 import React from 'react';
 import './App.css';
-import Data from './components/data';
+import Calculate from './components/calculation';
+import { ThemeProvider } from '@material-ui/styles';
 
-export default class App extends React.Component{
+
+export default class App extends React.Component {
   render(){
     return (
+      <ThemeProvider >
       <div className="App">
-        <Data />
+        <Calculate />
       </div>
+      </ThemeProvider>
     );
   }
 }
+
 
